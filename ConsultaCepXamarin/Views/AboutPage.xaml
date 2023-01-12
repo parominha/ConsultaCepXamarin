@@ -31,11 +31,27 @@
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Label Text="Consulta de CEP" FontSize="Title" TextColor="black" HorizontalTextAlignment="Center"/>
                 <Label Text="O CEP será consultado no ViaCEP" FontSize="16" TextColor="black" HorizontalTextAlignment="Center"/>
-                <Entry Keyboard="Numeric" MaxLength="8" Placeholder="Digite o CEP" PlaceholderColor="#737272" TextColor="black" Margin="0,30,0,30"/>
+                <Entry Keyboard="Numeric" MaxLength="9" Placeholder="Digite o CEP" PlaceholderColor="#737272" TextColor="black" Margin="0,30,0,30"/>
                 <Button Margin="0,10,0,0" Text="Consultar"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="pink"
                         TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+
+        <ScrollView Grid.Row="2">
+            <StackLayout Orientation="Vertical"  Padding="30,24,30,24" Spacing="10">
+                <Label Text="CEP: " FontSize="16" TextColor="black" />
+                <Label Text="Logradouro: " FontSize="16" TextColor="black" />
+                <Label Text="Complemento: " FontSize="16" TextColor="black" />
+                <Label Text="Bairro: " FontSize="16" TextColor="black" />
+                <Label Text="Localidade: " FontSize="16" TextColor="black" />
+                <Label Text="UF: " FontSize="16" TextColor="black" />
+                <Label Text="IBGE: " FontSize="16" TextColor="black" />
+                <Label Text="GIA: " FontSize="16" TextColor="black" />
+                <Label Text="DDD: " FontSize="16" TextColor="black" />
+                <Label Text="Siafi: " FontSize="16" TextColor="black" />
+                
             </StackLayout>
         </ScrollView>
     </Grid>
